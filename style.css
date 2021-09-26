@@ -1,0 +1,54 @@
+body{
+    margin: 0%;
+    padding: 0em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+label{
+    font-weight: 600;
+}
+.h1{
+    color: rgb(255, 255, 255);
+    background-color:rgb(134, 76, 168) ;
+    margin-top: 0%;
+}
+hr{
+    margin: 0px;
+}
+.h2{
+    color: white;
+    margin: 0px;
+    background-color:rgb(134, 76, 168);
+}
+
+input{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+}
+.top{
+    display: flex;
+    
+}
+.info{
+    position: relative;
+    top: 100px;
+}
+main{
+    width: 100%;
+}
+.btn{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    width: 90%;
+    border-radius: 10px;
+    color: white;
+    background-color:rgb(134, 76, 168) ;
+}
+.btn:hover{
+    background-color:rgb(104, 54, 133) ; 
+}
+.design{
+    width: 50%;
+}
+.footer{
+    height: 50px;
+}
