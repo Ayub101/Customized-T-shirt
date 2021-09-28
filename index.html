@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I2R Custom T-shirt</title>
-    <link rel="icon" href="Images/icon.png">
     <link rel="stylesheet" href="style.css ">
+    <link rel="icon" href="Images/icon.png">
 </head>
 
 <body >
@@ -39,27 +39,30 @@
         <hr>
         <div class="design">
             <form action="">
-                <table cellpadding=12 cellspacing=6 border="0" width=100%>
+                <table id=designinfo cellpadding=12 cellspacing=6 border="0" width=100%>
                     <tr>
-                        <td><label for="design">Design:</label></td>
+                        <td><label for="Design">Design:</label></td>
                         <td>
-                            <select name="design" id="design">
+                            <select name="Design" id="design">
+                                <option value="select">select</option>
                                 <option value="Round Neck">Unisex Round Neck</option>
                                 <option value="Collar Neck">Unisex Collar Neck</option>
                             </select>
                         </td>
-                        <td><label for="material">Material:</label></td>
+                        <td><label for="Material">Material:</label></td>
                         <td>
-                            <select name="material" id="material">
-                                <option value="180">High-quality 180 GSM pure cotton</option>
-                                <option value="260">Premium 260 GSM poly cotton</option>
-                                <option value="240">240 GSM poly cotton</option>
-                                <option value="200">200 GSM poly cotton</option>
+                            <select name="Material" id="material">
+                                <option value="select">select</option>
+                                <option value="180 GSM pure cotton">High-quality 180 GSM pure cotton</option>
+                                <option value="260 GSM poly cotton">Premium 260 GSM poly cotton</option>
+                                <option value="240 GSM poly cotton">240 GSM poly cotton</option>
+                                <option value="200 GSM poly cotton">200 GSM poly cotton</option>
                             </select>
                         </td>
-                        <td><label for="colour">T-shirt Colour:</label></td>
+                        <td><label for="Colour">T-shirt Colour:</label></td>
                         <td>
-                            <select name="colour" id="colour">
+                            <select name="Colour" id="colour">
+                                <option value="select">select</option>
                                 <option value="white">White</option>
                                 <option value="blue">Blue</option>
                                 <option value="black">Black</option>
@@ -69,58 +72,61 @@
                                 <option value="voilet">Voilet</option>
                             </select>
                         </td>
-                        <td><label for="size">Size:</label></td>
+                        <td><label for="Size">Size:</label></td>
                         <td>
-                            <input type="radio" id="s" name="size" value="sm">
+                            <input type="radio" id="s" name="size" value="SM">
                             <label for="size">S</label>
-                            <input type="radio" id="m" name="size" value="sm">
+                            <input type="radio" id="m" name="size" value="M">
                             <label for="size">M</label>
-                            <input type="radio" id="l" name="size" value="sm">
+                            <input type="radio" id="l" name="size" value="L">
                             <label for="size">L</label>
-                            <input type="radio" id="xl" name="size" value="sm">
+                            <input type="radio" id="xl" name="size" value="XL">
                             <label for="size">XL</label>
                         </td>
                     </tr>
                     <tr>
-                        <td><label for="printtype">Print type:</label></td>
+                        <td><label for="Print Type">Print type:</label></td>
                         <td>
-                            <select name="printtype" id="type">
-                                <option value="screen">Screen Printing</option>
-                                <option value="direct">Direct to Garment Printing</option>
-                                <option value="transfer">Transfer Printing</option>
+                            <select name="Print Type" id="type">
+                                <option value="select">select</option>
+                                <option value="screen Printing">Screen Printing</option>
+                                <option value="direct Printing">Direct to Garment Printing</option>
+                                <option value="transfer Printing">Transfer Printing</option>
                             </select>
                         </td>
                         <td>
-                            <label for="location">Print location:</label></td>
+                            <label for="Print Location">Print location:</label></td>
                         <td>
-                            <select name="location" id="location">
-                                <option value="front">Front side of T-shirt</option>
-                                <option value="back">Back side of T-shirt </option>
+                            <select name="Print Location" id="location">
+                                <option value="select">select</option>
+                                <option value="front side of T-shirt">Front side of T-shirt</option>
+                                <option value="back side of T-shirt">Back side of T-shirt </option>
                             </select>
                         </td>
-                        <td><label for="printsize">Print Size:</label></td>
+                        <td><label for="Print Size">Print Size:</label></td>
                         <td>
-                            <select name="size" id="size">
-                                <option value="2in">2 inches</option>
-                                <option value="3in">3 inches</option>
-                                <option value="4in">4 inches</option>
-                                <option value="5in">5 inches</option>
+                            <select name="Print Size" id="size">
+                                <option value="select">select</option>
+                                <option value="2 inches">2 inches</option>
+                                <option value="3 inches">3 inches</option>
+                                <option value="4 inches">4 inches</option>
+                                <option value="5 inches">5 inches</option>
                             </select>
                         </td>
-                        <td><label for="tagline">Tag-line:</label></td>
+                        <td><label for="Tag-line">Tag-line:</label></td>
                         <td>
-                            <input type="text" placeholder="Line to print on T-shirt">
+                            <input type="text" name="Tag-line" id="tagline" placeholder="Line to print on T-shirt">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="quantity">Quantity:</label></td>
+                            <label for="Quantity">Quantity:</label></td>
                         <td>
-                            <input type="number" value="1">
+                            <input type="number" id="quntity" value="1">
                         </td>
-                        <td><label for="description">Additional Information:</label></td>
+                        <td><label for="More Description">Additional Information:</label></td>
                         <td colspan="4">
-                            <textarea name="description" id="description" cols="80" rows="1" placeholder="Type addtional description here"></textarea>
+                            <textarea name="More Description" id="description" cols="80" rows="1" placeholder="Type addtional description here"></textarea>
                         </td>
                     </tr>
                 </table>
@@ -132,36 +138,36 @@
                 <h2 class="h2">Personal Information</h2>
             </div>
             <hr>
-            <form action="">
-                <table cellpadding=8 cellspacing=4 border="0" align="center">
+            <form action="" onsubmit="return false">
+                <table id="custinfo" cellpadding=8 cellspacing=4 border="0" align="center">
                     <tr>
-                        <td><label for="name">Name:</label></td>
+                        <td><label for="Name">Name:</label></td>
                     <td>
-                        <input type="text" name="name" placeholder="your name">
+                        <input type="text" name="Name" id="name" placeholder="your name">
                     </td>
                     </tr>
                     <tr>
-                        <td><label for="email">Email:</label></td>
+                        <td><label for="E-mail">Email:</label></td>
                         <td>
-                            <input type="text" name="email" placeholder="abc123@gmail.com">
+                            <input type="text" name="E-mail" id="email" placeholder="abc123@gmail.com">
                         </td>
                     </tr>
                     <tr>
-                        <td><label for="mob">Mobile No:</label></td>
+                        <td><label for="Mobile No.">Mobile No:</label></td>
                         <td>
-                            <input type="text" name="mob" placeholder="8108******">
+                            <input type="text" name="Mobile No." id="mob" placeholder="8108******">
                         </td>
                     </tr>
                     <tr>
-                        <td><label for="city">City:</label></td>
+                        <td><label for="City">City:</label></td>
                         <td>
-                            <input type="text" name="city" placeholder="eg. Mumbai">
+                            <input type="text" name="City" id="city" placeholder="eg. Mumbai">
                         </td>
                     </tr>                
                     <tr>
-                        <td><label for="pincode">Pin code:</label></td>
+                        <td><label for="Pin-code">Pin code:</label></td>
                         <td>
-                            <input type="text" name="pincode" placeholder="eg.400072">
+                            <input type="text" name="Pin-code" id="code" placeholder="eg.400072">
                         </td>
                     </tr>    
                     <tr>
@@ -172,18 +178,22 @@
                     </tr> 
                     <tr>
                         <td colspan="2" align="center">
-                            <input class="btn" type="submit" value="Place Order" onclick="alert('You want to Place Order')">
+                            <input class="btn" type="submit" value="Place Order" >
                         </td>
                     </tr>     
                 </table>
                 <hr>
             </form>
         </div>
-
+        <div class="recipt">
+            <h1 align=center class="h1">Recipt</h1>
+            
+        </div>
+        
     </main>
     <footer>
         <div class="footer">
-
+            <button class="Ass3">Assignment 03</button>
         </div>
     </footer>
 </body>
@@ -202,4 +212,6 @@
 
     },3000)
 </script>
+<script src="app.js"></script>
+<script src="index.js" ></script>
 </html>

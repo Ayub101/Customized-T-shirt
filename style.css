@@ -29,6 +29,7 @@ input{
 }
 .info{
     position: relative;
+    height: 400px;
     top: 100px;
 }
 main{
@@ -50,5 +51,38 @@ main{
     width: 50%;
 }
 .footer{
-    height: 50px;
+    height: 100px;
+}
+.Ass3{
+    position: relative;
+    left: 24%;
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    width: 50%;
+    border-radius: 10px;
+    color: white;
+    background-color:rgb(134, 76, 168) ;
+}
+.Ass3:hover{
+    background-color:rgb(104, 54, 133) ; 
+    color: rgb(204, 196, 196);
+
+
+}
+.recipt{
+    display: none;
+}
+.printbtn{
+    position: relative;
+    left: 24%;
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    width: 50%;
+    border-radius: 10px;
+    color: white;
+    background-color:rgb(134, 76, 168) ;
 }
