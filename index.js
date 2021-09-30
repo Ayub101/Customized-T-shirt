@@ -2,7 +2,7 @@ const btn  = document.querySelector(".Ass3");
 
 
 btn.onclick = () => {
-    let student = {
+    var student = {
         name1 : "AYUB", 
         rollNo: 10, 
         class1: "D15A", 
@@ -12,10 +12,13 @@ btn.onclick = () => {
             console.log(`roll No : ${this.rollNo}`)
             console.log(`class ${this.class1}`)
             console.log(`college : ${this.college}`)
+            console.log(`Age : ${this.age}`);
         }
 
     }
 
+    //prototype
+    
     student.print()
 
 
@@ -33,16 +36,19 @@ btn.onclick = () => {
             console.log(`roll No : ${this.rollNo}`)
             console.log(`class ${this.class1}`)
             console.log(`college : ${this.college}`)
+            console.log(`Age : ${this.age}`);
         }
 
     }
+    //prototype
+    student1.prototype.age = 20; 
 
-    let student2 = new student1("Ayub" , 10 , "D15A" , "vesit")
-    student2.print()
+    var student2 = new student1("Ayub" , 10 , "D15A" , "vesit")  
+    student2.print();
 
 
     function takeInput(){
-        let roll = prompt("enter your roll no")
+        let roll = prompt("enter your roll no :")
         
         if(roll == 0){
             console.log("roll Number cant be zero")
