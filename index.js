@@ -49,15 +49,19 @@ btn.onclick = () => {
 
     function takeInput(){
         let roll = prompt("enter your roll no :")
-        
-        if(roll == 0){
-            console.log("roll Number cant be zero")
-        }
-        else{
-            student.rollNo = roll;
-            console.log("")
-            console.log("printing after changing roll no")
-            console.log(student.print())
+        try{
+            if(roll == 0){
+                throw "Roll no Can`t be :0"
+            }
+            else{
+                student.rollNo = roll;
+                console.log("")
+                console.log("printing after changing roll no")
+                console.log(student.print())
+            }
+        }catch(err){
+            alert(err)
+
         }
     }
     takeInput()
